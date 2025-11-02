@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ingredientes">
+
+    <CheckBox
+        android:id="@+id/cbPimienta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="cbClicked"
+        android:text="Pimienta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.217"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbSal"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/cbSal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="cbClicked"
+        android:text="Sal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbEspinacas" />
+
+    <CheckBox
+        android:id="@+id/cbAceiteOliva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="cbClicked"
+        android:text="Aceite de oliva virgen extra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.343"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbHojasAlbahaca" />
+
+    <CheckBox
+        android:id="@+id/cbAguacate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="cbClicked"
+        android:text="Aguacate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbTomates" />
+
+    <CheckBox
+        android:id="@+id/cbRebanadasPanIntegral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="cbClicked"
+        android:text="Rebanadas de pan integral"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.339"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbHuevos" />
+
+    <CheckBox
+        android:id="@+id/cbMozzarella"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="cbClicked"
+        android:text="Mozzarella fresca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.265"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbZumoMedioLimon" />
+
+    <CheckBox
+        android:id="@+id/cbHojasAlbahaca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="cbClicked"
+        android:text="Hojas de Albahaca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.271"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbMozzarella" />
+
+    <CheckBox
+        android:id="@+id/cbTomates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="cbClicked"
+        android:text="Tomates grandes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbRebanadasPanIntegral" />
+
+    <CheckBox
+        android:id="@+id/cbEspinacas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="cbClicked"
+        android:text="Espinacas frescas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.268"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbAceiteOliva" />
+
+    <CheckBox
+        android:id="@+id/cbZumoMedioLimon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="cbClicked"
+        android:text="Zumo de medio limón"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.294"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbAguacate" />
+
+    <CheckBox
+        android:id="@+id/cbHuevos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:onClick="cbClicked"
+        android:text="Huevos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSiguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnSiguienteClicked"
+        android:text="Siguiente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbPimienta" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
