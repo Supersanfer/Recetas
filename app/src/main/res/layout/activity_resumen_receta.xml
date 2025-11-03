@@ -5,99 +5,116 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FAF7F0"
+    android:padding="16dp"
     tools:context=".ResumenReceta">
 
-    <Button
-        android:id="@+id/btnHuevosRevueltosEspinacas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="onClicked"
-        android:text="Huevos revueltos con espinacas"
-        app:layout_constraintBottom_toTopOf="@+id/pbHuevosRevueltosEspinacas"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.305"
-        app:layout_constraintStart_toStartOf="parent" />
-
+    <!-- Bloque 1: Tostadas -->
     <Button
         android:id="@+id/btnTostadaAguacate"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#558B2F"
+        android:elevation="4dp"
         android:onClick="onClicked"
         android:text="Tostadas de aguacate"
-        app:layout_constraintBottom_toTopOf="@+id/pbTostadasAguacate"
+        android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.216"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ProgressBar
         android:id="@+id/pbTostadasAguacate"
         style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="90dp"
-        android:layout_height="38dp"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnEnsaladaCaprese"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:progressBackgroundTint="#E0E0E0"
+        android:progressTint="#558B2F"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.149"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
+        app:layout_constraintTop_toBottomOf="@+id/btnTostadaAguacate" />
 
-    <ProgressBar
-        android:id="@+id/pbHuevosRevueltosEspinacas3"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="90dp"
-        android:layout_height="38dp"
-        android:layout_marginBottom="184dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <!-- Bloque 2: Ensalada -->
+    <Button
+        android:id="@+id/btnEnsaladaCaprese"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#558B2F"
+        android:elevation="4dp"
+        android:onClick="onClicked"
+        android:text="Ensalada caprese"
+        android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.149"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pbTostadasAguacate" />
 
     <ProgressBar
         android:id="@+id/pbEnsaladaCaprese"
         style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="90dp"
-        android:layout_height="38dp"
-        android:layout_marginBottom="28dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnHuevosRevueltosEspinacas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:progressBackgroundTint="#E0E0E0"
+        android:progressTint="#558B2F"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.149"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEnsaladaCaprese" />
+
+    <!-- Bloque 3: Huevos -->
+    <Button
+        android:id="@+id/btnHuevosRevueltosEspinacas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#558B2F"
+        android:elevation="4dp"
+        android:onClick="onClicked"
+        android:text="Huevos revueltos con espinacas"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pbEnsaladaCaprese" />
 
     <ProgressBar
         android:id="@+id/pbHuevosRevueltosEspinacas"
         style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="90dp"
-        android:layout_height="38dp"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnSanwitchEspinacasHuevo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.149"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/btnEnsaladaCaprese"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp"
-        android:onClick="onClicked"
-        android:text="Ensalada caprese"
-        app:layout_constraintBottom_toTopOf="@+id/pbEnsaladaCaprese"
+        android:layout_marginTop="4dp"
+        android:progressBackgroundTint="#E0E0E0"
+        android:progressTint="#558B2F"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.192"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHuevosRevueltosEspinacas" />
 
+    <!-- Bloque 4: Sándwich -->
     <Button
         android:id="@+id/btnSanwitchEspinacasHuevo"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#558B2F"
+        android:elevation="4dp"
         android:onClick="onClicked"
         android:text="Sándwich caliente de espinacas y huevo"
-        app:layout_constraintBottom_toTopOf="@+id/pbHuevosRevueltosEspinacas3"
+        android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.448"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pbHuevosRevueltosEspinacas" />
+
+    <ProgressBar
+        android:id="@+id/pbSandwichEspinacasHuevo"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:progressBackgroundTint="#E0E0E0"
+        android:progressTint="#558B2F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSanwitchEspinacasHuevo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

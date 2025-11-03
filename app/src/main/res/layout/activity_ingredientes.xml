@@ -5,29 +5,29 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FAF7F0"
+    android:padding="24dp"
     tools:context=".Ingredientes">
 
     <CheckBox
         android:id="@+id/cbPimienta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:buttonTint="#558B2F"
         android:onClick="cbClicked"
         android:text="Pimienta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.217"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cbSal"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/cbSal" />
 
     <CheckBox
         android:id="@+id/cbSal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:buttonTint="#558B2F"
         android:onClick="cbClicked"
         android:text="Sal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.194"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cbEspinacas" />
 
@@ -35,10 +35,10 @@
         android:id="@+id/cbAceiteOliva"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:buttonTint="#558B2F"
         android:onClick="cbClicked"
         android:text="Aceite de oliva virgen extra"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.343"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cbHojasAlbahaca" />
 
@@ -46,10 +46,10 @@
         android:id="@+id/cbAguacate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:buttonTint="#558B2F"
         android:onClick="cbClicked"
         android:text="Aguacate"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.22"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cbTomates" />
 
@@ -57,10 +57,10 @@
         android:id="@+id/cbRebanadasPanIntegral"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:buttonTint="#558B2F"
         android:onClick="cbClicked"
         android:text="Rebanadas de pan integral"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.339"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cbHuevos" />
 
@@ -68,10 +68,10 @@
         android:id="@+id/cbMozzarella"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:buttonTint="#558B2F"
         android:onClick="cbClicked"
         android:text="Mozzarella fresca"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.265"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cbZumoMedioLimon" />
 
@@ -79,10 +79,10 @@
         android:id="@+id/cbHojasAlbahaca"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:buttonTint="#558B2F"
         android:onClick="cbClicked"
         android:text="Hojas de Albahaca"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.271"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cbMozzarella" />
 
@@ -90,10 +90,10 @@
         android:id="@+id/cbTomates"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:buttonTint="#558B2F"
         android:onClick="cbClicked"
         android:text="Tomates grandes"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.263"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cbRebanadasPanIntegral" />
 
@@ -101,10 +101,10 @@
         android:id="@+id/cbEspinacas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:buttonTint="#558B2F"
         android:onClick="cbClicked"
         android:text="Espinacas frescas"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.268"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cbAceiteOliva" />
 
@@ -112,10 +112,10 @@
         android:id="@+id/cbZumoMedioLimon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:buttonTint="#558B2F"
         android:onClick="cbClicked"
         android:text="Zumo de medio limón"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.294"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cbAguacate" />
 
@@ -123,23 +123,28 @@
         android:id="@+id/cbHuevos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="24dp"
+        android:buttonTint="#558B2F"
         android:onClick="cbClicked"
         android:text="Huevos"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.211"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnSiguiente"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="363dp"
+        android:layout_height="65dp"
+        android:backgroundTint="#558B2F"
+        android:elevation="4dp"
         android:onClick="btnSiguienteClicked"
         android:text="Siguiente"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cbPimienta" />
+        app:layout_constraintTop_toBottomOf="@+id/cbPimienta"
+        app:layout_constraintVertical_bias="0.857" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
