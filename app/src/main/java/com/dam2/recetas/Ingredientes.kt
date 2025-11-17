@@ -19,7 +19,6 @@ class Ingredientes : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityIngredientesBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         listaIngredientes = mutableListOf();
     }
 

@@ -1,4 +1,4 @@
- package com.dam2.recetas
+package com.dam2.recetas
 
 import android.content.Intent
 import android.content.res.ColorStateList
