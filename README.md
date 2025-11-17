@@ -24,3 +24,7 @@ La aplicación consta de 4 pantallas principales:
 * **Lenguaje:** Kotlin
 * **Plataforma:** Android (SDK Nativo)
 * **IDE:** Android Studio
+
+## TODO: Por implementar
+
+*  Mejoras gráficas en pantalla de Ingredientes y Descripcion de recetas
